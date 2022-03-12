@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <button type="button" onclick="showMessage();">Click Me!</button>
-    <script src="index.js"></script>
+    <h2>Nhập số vào</h2>
+    <input type="text" id="num1" placeholder="nhập số bất kỳ">
+    <button type="button" onclick="Kq();">Kiểm Tra</button>
+    <script>
+
+        function Kq() {
+            let a = +document.getElementById("num1").value;
+            if (a % 2 == 0)
+                alert("số chẵn")
+        } 
+    </script>
 </body>
+
 </html>
